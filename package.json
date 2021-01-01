@@ -1,39 +1,41 @@
 {
-  "name": "deventy",
+  "name": "blog",
   "version": "1.5.0",
-  "description": "A minimal 11ty starter with modern tools",
+  "description": "Rvi's personal blog",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf dist",
-    "eleventy:default": "npx eleventy",
+    "eleventy:default": "ELEVENTY_PRODUCTION=true npx eleventy",
     "eleventy:watch": "npx eleventy --watch",
-    "styles:prod": "node-sass src/styles/ --output dist/styles/ && postcss ./dist/styles/*.css --replace",
+    "styles:prod": "node-sass src/styles/ --output dist/styles/ && NODE_ENV=production postcss ./dist/styles/*.css --replace",
     "styles:dev": "node-sass src/styles/ --output dist/styles/ --source-map true --source-map-contents true && postcss ./dist/styles/*.css --replace",
     "scripts:prod": "webpack --mode=production",
     "scripts:dev": "webpack --mode=development",
     "serve": "light-server -c .lightserverrc",
     "dev": "npm-run-all clean styles:dev scripts:dev eleventy:default --parallel eleventy:watch serve --print-label",
     "dev:debug": "DEBUG=* npm run dev",
-    "build": "run-s clean styles:prod scripts:prod eleventy:default --print-label"
+    "build": "run-s clean eleventy:default styles:prod scripts:prod --print-label"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://ianrose@github.com/ianrose/deventy.git"
+    "url": "https://github.com/rvisharma/blog.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ianrose/deventy/issues"
+    "url": "https://github.com/rvisharma/blog/issues"
   },
-  "homepage": "https://github.com/ianrose/deventy#readme",
+  "homepage": "https://github.com/rvisharma/blog#readme",
   "devDependencies": {
-    "light-server": "2.9.1"
+    "light-server": "2.9.1",
+    "tailwindcss": "^2.0.2"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
+    "@tailwindcss/typography": "^0.3.1",
     "acorn": "^8.0.0",
     "autoprefixer": "^10.0.0",
     "babel-loader": "^8.0.6",

@@ -1,7 +1,3 @@
-@import '_reset.scss';
-
-$var: white;
-
-body {
-  background-color: $var;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
