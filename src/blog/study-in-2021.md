@@ -2,6 +2,7 @@
 title: Study in 2021
 tags: post
 layout: layouts/tailwind-prose-base.njk
+description: "My 2021 study plan"
 ---
 
 ## Why am I doing this?
