@@ -48,4 +48,4 @@ For all topic or concept that I learn and consume, there **must** be a correspon
 
 Not going to plan early and get overwhelmed.
 
-> slow and steady, dude… — me
+> slow and steady, dude… — [rvi](/)
