@@ -4,6 +4,7 @@ tags: post
 layout: layouts/tailwind-prose-base.njk
 description: "My 2021 study plan"
 ---
+# {{title}}
 
 ## Why am I doing this?
 
@@ -17,7 +18,7 @@ Also, learning needs to be consistent to maximize value out of it. 2-day binge l
 
 ## What is going to be my improvement area?
 
-I am interested in broad areas of whole software development but i work on frontend more as per my role. The list is huge and the whole idea of unknown-unknowns doesn’t keep me in peace and content. But time is limited and I want to start small and most importantly, be consistent. So I’m going to focus on specific areas first and then move onto other topics.
+I am interested in broad areas of whole software development, but I work on front-end more during my daily dev work. The list is huge, and the whole idea of unknown-unknowns doesn’t keep me in peace and content. But time is limited and I want to start small and most importantly, be consistent. So I’m going to focus on specific areas first and then move onto other topics.
 
 ## January 2021 - Foundation
 
