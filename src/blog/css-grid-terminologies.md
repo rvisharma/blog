@@ -4,7 +4,7 @@ tags:
   - css
   - css-grid
   - post
-description: Terms used for CSS grid.
+description: CSS Grid introduction
 layout: layouts/tailwind-prose-base.njk
 ---
 
