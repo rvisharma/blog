@@ -34,20 +34,18 @@ When grid was not available we used tables and flexbox to create a grid like lay
 
 In this post we will uncover the very fundamental terminologies of css grid that we need to get acquainted with and then in upcoming posts we'll dive in other aspects.
 
-
-- [CSS Grid - Introduction and terminologies](#css-grid---introduction-and-terminologies)
-  - [Grid container](#grid-container)
-    - [Formatting context](#formatting-context)
-    - [Block level and Inline level grid container](#block-level-and-inline-level-grid-container)
-    - [Block grid and Block containers](#block-grid-and-block-containers)
-  - [Grid item](#grid-item)
-  - [Grid lines](#grid-lines)
-  - [Grid track](#grid-track)
-  - [Grid cell](#grid-cell)
-  - [Grid area](#grid-area)
-  - [Rows and columns](#rows-and-columns)
-  - [The end](#the-end)
-  - [References mentioned in the post](#references-mentioned-in-the-post)
+- [Grid container](#grid-container)
+  - [Formatting context](#formatting-context)
+  - [Block level and Inline level grid container](#block-level-and-inline-level-grid-container)
+  - [Block grid and Block containers](#block-grid-and-block-containers)
+- [Grid item](#grid-item)
+- [Grid lines](#grid-lines)
+- [Grid track](#grid-track)
+- [Grid cell](#grid-cell)
+- [Grid area](#grid-area)
+- [Rows and columns](#rows-and-columns)
+- [The end](#the-end)
+- [References mentioned in the post](#references-mentioned-in-the-post)
 
 ## Grid container
 
