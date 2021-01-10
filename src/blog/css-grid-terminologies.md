@@ -171,7 +171,7 @@ How do we place grid items on grid areas? We'll cover that in the upcoming post.
 
 ## The end
 
-![grid area](/images/css-grid-terminologies/canvas.png){loading="lazy"} {.excalidraw-dark}
+![grid area](/images/css-grid-terminologies/canvas.jpg){loading="lazy"} {.excalidraw-dark}
 
 🎨 All drawings were made using [Excalidraw](https://excalidraw.com/){target="_blank" rel="noopener noreferrer"}
 
