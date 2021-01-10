@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.excalidraw-dark {
+  @apply bg-gray-900;
+
+  > img{
+    filter: invert(100%) hue-rotate(180deg);
+    @apply max-w-full;
+    @apply mx-auto;
+  }
+}
