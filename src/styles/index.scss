@@ -2,13 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+.full-bleed {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  margin-left: -50vw;
+}
 
-.excalidraw-dark {
+
+.excalidraw {
   @apply bg-gray-900;
 
-  > img{
-    filter: invert(100%) hue-rotate(180deg);
+  > img {
     @apply max-w-full;
     @apply mx-auto;
+    max-height: 60vh;
+  }
+
+  &--dark {
+    > img {
+      filter: invert(100%) hue-rotate(180deg);
+    }
   }
 }
+
