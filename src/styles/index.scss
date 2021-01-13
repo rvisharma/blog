@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+ background: #faf0e6; 
+}
+
 .full-bleed {
   position: relative;
   width: 100vw;
@@ -16,7 +20,7 @@
   > img {
     @apply max-w-full;
     @apply mx-auto;
-    max-height: 60vh;
+    max-height: 35vh;
   }
 
   &--dark {
