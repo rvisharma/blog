@@ -11,13 +11,21 @@ layout: layouts/tailwind-prose-base.njk
 
 # CSS Grid - Introduction and terminologies
 
+{% image
+"src/images/css-grid-terminologies/css-grid.png",
+"CSS Grid"
+%}
+{.excalidraw .full-bleed}
 
-![CSS Grid](/images/css-grid-terminologies/css-grid.png){loading="lazy"} {.excalidraw .excalidraw--dark .full-bleed}
 
+CSS Grid came into the limelight recently([a few years ago](https://www.youtube.com/watch?v=Felq4z_rdPQ){target="_blank" rel="noopener noreferrer"}) but its presence has been there since old IE days. CSS Grid solves the problem area of two-dimensional layouts.
+There have been multiple attempts to solve the designing layout using other properties in CSS - position hacks, floats, table, flex are such very popular examples with comes with their own set of problems.
 
-CSS Grid came into the limelight recently([a few years ago](https://www.youtube.com/watch?v=Felq4z_rdPQ)) but its presence has been there since old IE days. CSS Grid solves the problem area of two-dimensional layouts. There have been multiple attempts to solve the designing layout using other properties in CSS - position hacks, floats, table, flex are such very popular examples with comes with their own set of problems.
-
-![i don't need grid](/images/css-grid-terminologies/i-have-flexbox.png){loading="lazy"} {.excalidraw .excalidraw--dark .full-bleed}
+{% image
+"src/images/css-grid-terminologies/i-have-flexbox.png",
+"I don't need grid"
+%}
+{.excalidraw .full-bleed}
 
 Syntactically and visually, we can achieve the 2D layouts using flexbox or tables then why do we need a grid in the picture? Grid brings a very unique quality with itself – **Semantics**. Tables are semantically for table layouts or tabular structured data, flexbox is semantically there for 1-dimensional flexible layouts (navigation bars, etc). In that same essence, Grids are for 2-dimensional layouts.
 
@@ -25,7 +33,11 @@ CSS is a declarative language, when you need something to be of let's say red co
 
 totally rad!! {.text-red-600}
 
-![I can use flexbox to create layout](/images/css-grid-terminologies/i-know-flexbox.png){loading="lazy"} {.excalidraw .excalidraw--dark .full-bleed}
+{% image
+  "src/images/css-grid-terminologies/i-know-flexbox.png",
+  "I can use flexbox to create layout"
+%}
+{.excalidraw .full-bleed}
 
 
 <sub>excuse this poor imitation of xkcd, the original one for regex is a lot better - [https://xkcd.com/208/](https://xkcd.com/208/){target="_blank" rel="noopener noreferrer"}</sub>
@@ -51,7 +63,11 @@ In this post, we will uncover the very fundamental terminologies of the CSS grid
 
 So, what are grid container? In _simple_ terms, grid container is **an element that defines _grid formatting context_**.
 
-![grid formatting context](/images/css-grid-terminologies/grid-formatting-context.png){loading="lazy"} {.excalidraw .excalidraw--dark .full-bleed}
+{% image
+"src/images/css-grid-terminologies/grid-formatting-context.png",
+"grid formatting context"
+%}
+{.excalidraw .full-bleed}
 
 >What's this grid formatting context?
 
@@ -103,37 +119,62 @@ Block grids look like they behave similar to the regular block containers which 
 
 Now that we understand what grid containers are, grid elements are straightforward. Direct children (including anonymous) of a grid container are known are grid elements.
 
-![grid items](/images/css-grid-terminologies/grid-items.png){loading="lazy"} {.excalidraw .excalidraw--dark .full-bleed}
+{% image
+"src/images/css-grid-terminologies/grid-items.png",
+"grid items"
+%}
+{.excalidraw .full-bleed}
 
 There is no such restriction on defining the layout of grid items. A grid item can be a flexbox container by adding declaration `display: flex;`. Heck, we can go ahead and add `display: grid;` to the grid item, and it behaves as a grid container for its child item! This means it behaves as a grid-item for its parent and grid-container for its children. You can call it a nested grid. (_not subgrid - that's different_)
 
-![we can use flexbox and grid together](/images/css-grid-terminologies/grid-items-flex-container.png){loading="lazy"} {.excalidraw .excalidraw--dark .full-bleed}
+{% image
+"src/images/css-grid-terminologies/grid-items-flex-container.png",
+"we can use flexbox and grid together"
+%}
+{.excalidraw .full-bleed}
 
 
 ## Grid lines
 
 Grid lines are the basic unit of the grid on which other parts of the grid are built upon. How do we create grid lines? We don't. It's something that gets created (_logically_) when we define grid template in case of the explicit grid and when grid automatically places content in case of the implicit grid. We'll uncover what explicit and implicit grid is in another post.
 
-![grid lines](/images/css-grid-terminologies/grid-lines.png){loading="lazy"} {.excalidraw .excalidraw--dark .full-bleed}
+{% image
+"src/images/css-grid-terminologies/grid-lines.png",
+"grid lines"
+%}
+{.excalidraw .full-bleed}
 
 We can refer to the grid lines as numbers via CSS and place the grid items. They start as 1 from the starting edge of flow direction.
 
 ## Grid track
 
-![grid tracks](/images/css-grid-terminologies/grid-tracks.png){loading="lazy"} {.excalidraw .excalidraw--dark .full-bleed}
+{% image
+"src/images/css-grid-terminologies/grid-tracks.png",
+"grid tracks"
+%}
+{.excalidraw .full-bleed}
+
 
 The area between 2 adjacent grid lines is known as a grid track. The direction of the grid tracks can be vertical and horizontal. The vertical direction is the columns and the horizontal direction is rows. (this changes based on the writing mode)
 
 ## Grid cell
 
-![grid cells](/images/css-grid-terminologies/grid-cells.png){loading="lazy"} {.excalidraw .excalidraw--dark .full-bleed}
+{% image
+"src/images/css-grid-terminologies/grid-cells.png",
+"grid cells"
+%}
+{.excalidraw .full-bleed}
 
 The area between 4 grid lines is called a grid cell, it is the smallest unit of area in a grid.
 
 
 ## Grid area
 
-![grid area](/images/css-grid-terminologies/grid-area.png){loading="lazy"} {.excalidraw .excalidraw--dark .full-bleed}
+{% image
+"src/images/css-grid-terminologies/grid-area.png",
+"grid area"
+%}
+{.excalidraw .full-bleed}
 
 A grid area is the combination of one or more grid cells together. These are accessible via CSS grid properties. We can define the grid areas and place our grid items over those areas.
 
@@ -171,7 +212,12 @@ How do we place grid items on grid areas? We'll cover that in the upcoming post.
 
 ## The end
 
-![grid area](/images/css-grid-terminologies/canvas.jpg){loading="lazy"} {.excalidraw .full-bleed}
+{% image
+"src/images/css-grid-terminologies/canvas.jpg",
+"all images in this post"
+%}
+{.excalidraw .excalidraw--invert .full-bleed}
+
 
 🎨 All drawings were made using [Excalidraw](https://excalidraw.com/#json=5806952810545152,KdPJk6L2kcXKiisdRSFSiA){target="_blank" rel="noopener noreferrer"}
 

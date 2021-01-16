@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
- background: #faf0e6; 
+ background: #faf0e6;
 }
 
 .full-bleed {
@@ -15,16 +15,18 @@ body {
 
 
 .excalidraw {
-  @apply bg-gray-900;
+  //@apply bg-gray-900;
 
-  > img {
-    @apply max-w-full;
+  img {
+    @apply w-full;
     @apply mx-auto;
-    max-height: 35vh;
+    @apply object-contain;
+
+    max-height: 50vh;
   }
 
-  &--dark {
-    > img {
+  &--invert {
+    img {
       filter: invert(100%) hue-rotate(180deg);
     }
   }
