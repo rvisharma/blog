@@ -229,6 +229,6 @@ How do we place grid items on grid areas? We'll cover that in the upcoming post.
 
 
 <!-- Codepen embed lib -->
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<script defer src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 <!-- Color palette used for demos - https://coolors.co/7776bc-cdc7e5-fffbdb-ffec51-ff674d -->
