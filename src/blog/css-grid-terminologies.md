@@ -4,7 +4,7 @@ tags:
   - css
   - css-grid
   - post
-description: CSS Grid introduction
+description: In this post, we dive into fundamental units of css grid
 layout: layouts/tailwind-prose-base.njk
 ---
 
@@ -29,7 +29,7 @@ There have been multiple attempts to solve the designing layout using other prop
 
 Syntactically and visually, we can achieve the 2D layouts using flexbox or tables then why do we need a grid in the picture? Grid brings a very unique quality with itself – **Semantics**. Tables are semantically for table layouts or tabular structured data, flexbox is semantically there for 1-dimensional flexible layouts (navigation bars, etc). In that same essence, Grids are for 2-dimensional layouts.
 
-CSS is a declarative language, when you need something to be of let's say red color. You declare it as color red by adding a declaration <span class="font-mono text-sm text-red-900" style="; ">{ color: red; }</span> 
+CSS is a declarative language, when you need something to be of let's say red color. You declare it as color red by adding a declaration <span class="font-mono text-sm text-red-900" style="; ">{ color: red; }</span>
 
 {% image
   "src/images/css-grid-terminologies/i-know-flexbox.png",
