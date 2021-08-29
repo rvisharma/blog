@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
- background: #faf0e6;
-}
-
 .full-bleed {
   position: relative;
   width: 100vw;
@@ -15,8 +11,6 @@ body {
 
 
 .excalidraw {
-  //@apply bg-gray-900;
-
   img {
     @apply w-full;
     @apply mx-auto;
@@ -31,4 +25,3 @@ body {
     }
   }
 }
-
