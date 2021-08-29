@@ -2,12 +2,13 @@
  "port": 4000,
  "serve": "dist",
  "bind": "localhost",
- "delay": 100,
+ "delay": 50,
  "quiet": true,
  "watchexps": [
     "src/scripts/**/*.js # npm run scripts:dev",
     "src/styles/**/*.scss # npm run styles:dev # reloadcss",
-    "dist/**/*.html",
+    "tailwind.config.js # npm run styles:dev # reloadcss",
+    "dist/**/*.html # npm run styles:dev",
     "src/images/"
  ],
  "http2": false,
