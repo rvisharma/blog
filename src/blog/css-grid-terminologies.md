@@ -4,7 +4,7 @@ tags:
   - css
   - css-grid
   - post
-description: In this post, we dive into fundamental units of css grid
+summary: In this post, we dive into fundamental units of css grid
 layout: layouts/tailwind-prose-base.njk
 ---
 

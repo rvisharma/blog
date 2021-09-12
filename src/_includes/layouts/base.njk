@@ -5,8 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ renderData.description or description or metadata.description }}">
-    <title>{{ renderData.title or title or metadata.title }}</title>
+
+    {% include "partials/meta-info.njk" %}
+
     <link rel="stylesheet" media="print" href="/styles/index.css?{{ assetHash }}" onload="this.media='all'" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
