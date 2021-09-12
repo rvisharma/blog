@@ -4,6 +4,8 @@ const Image = require("@11ty/eleventy-img");
 module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
 
+  eleventyConfig.addPassthroughCopy("src/robots.txt");
+
   setupMarkdownConfig(eleventyConfig)
 
   return {
