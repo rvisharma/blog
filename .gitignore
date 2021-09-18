@@ -68,3 +68,6 @@ dist
 
 # eleventy
 .cache
+
+# mac stuff
+**/*.DS_Store
