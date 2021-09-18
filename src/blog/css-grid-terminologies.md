@@ -71,7 +71,7 @@ So, what are grid container? In _simple_ terms, grid container is **an element t
 
 To answer that, let's understand what is _formatting context_ in general. Formatting contexts define the rules on how the content is going to layout visually and with the combination of other properties, how it affects the layout. This is not something new in CSS, it has been around since the beginning. You may not have known the term before, but for sure you have experienced it.
 
-For example, when you use `display: flex;` it sets the element to be of _flex formatting context_ and then by using flex related properties we can change the layout of its child. There are many such formatting contexts, like when you use a `<p></p>` tag, it creates an _inline formatting context_ which alters the behavior of the box model as compared to the default _block formatting context_.
+For example, when you use `display: flex;` it sets the element to be of _flex formatting context_ and then by using flex related properties we can change the layout of its child. There are many such formatting contexts, like when you use a `<p></p>` tag, it creates an _inline formatting context_ which alters the behaviour of the box model as compared to the default _block formatting context_.
 
 There are many helpful resources available on internet to understand formatting context. I would recommend an [introductory article](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Intro_to_formatting_contexts){target="\_blank" rel="noopener noreferrer"} on MDN and this article by Rachel Andrew on [CSS Layout And The Block Formatting Context](https://www.smashingmagazine.com/2017/12/understanding-css-layout-block-formatting-context/){target="\_blank" rel="noopener noreferrer"}
 
