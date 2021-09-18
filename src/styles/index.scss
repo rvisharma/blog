@@ -33,7 +33,7 @@ html {
 
 .full-bleed {
   position: relative;
-  width: 100vw;
+  width: calc(100vw - 8px);
   left: 50%;
   margin-left: -50vw;
 }
