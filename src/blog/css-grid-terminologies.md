@@ -1,5 +1,5 @@
 ---
-title: CSS Grid – Introduction and Terminologies
+title: CSS Grid - Introduction and Terminologies
 tags:
   - css
   - css-grid
