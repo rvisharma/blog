@@ -7,13 +7,9 @@
     "tailwindcss"
   ],
   "files.associations": {
-    "*.html": "twig",
     "*.njk": "twig"
   },
   "emmet.includeLanguages": {
     "twig": "html"
-  },
-  "[njk]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
