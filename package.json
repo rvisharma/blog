@@ -29,18 +29,18 @@
   "homepage": "https://github.com/rvisharma/blog#readme",
   "devDependencies": {
     "light-server": "2.9.1",
-    "markdown-it-anchor": "^8.3.0",
+    "markdown-it-anchor": "^8.3.1",
     "markdown-it-attrs": "^4.0.0",
-    "tailwindcss": "^2.2.8"
+    "tailwindcss": "^2.2.15"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-img": "^0.10.0",
-    "@babel/core": "^7.15.0",
-    "@babel/preset-env": "^7.15.0",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
     "@tailwindcss/typography": "^0.4.1",
-    "acorn": "^8.4.1",
-    "autoprefixer": "^10.3.3",
+    "acorn": "^8.5.0",
+    "autoprefixer": "^10.3.4",
     "babel-loader": "^8.2.2",
     "cssnano": "^5.0.8",
     "cssnano-preset-advanced": "^5.1.4",
@@ -48,7 +48,7 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
-    "webpack": "^5.51.1",
+    "webpack": "^5.53.0",
     "webpack-cli": "^4.8.0"
   }
 }
