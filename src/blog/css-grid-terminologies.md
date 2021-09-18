@@ -12,7 +12,8 @@ layout: layouts/tailwind-prose-base.njk
 
 {% image
 "src/images/css-grid-terminologies/css-grid.png",
-"CSS Grid"
+"CSS Grid",
+"eager"
 %}
 {.excalidraw .full-bleed}
 

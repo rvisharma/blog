@@ -23,7 +23,7 @@ module.exports = function (eleventyConfig) {
   }
 }
 
-async function imageShortcode(src, alt, sizes = '100vw') {
+async function imageShortcode(src, alt, loading = 'lazy', sizes = '100vw') {
   let metadata = await Image(src, {
     widths: [400, 800, 1200],
     formats: ['avif', 'webp', 'png'],
@@ -39,7 +39,7 @@ async function imageShortcode(src, alt, sizes = '100vw') {
   let imageAttributes = {
     alt,
     sizes,
-    loading: 'lazy',
+    loading,
     decoding: 'async',
   }
 
@@ -50,7 +50,6 @@ async function imageShortcode(src, alt, sizes = '100vw') {
 }
 
 function setupMarkdownConfig(eleventyConfig) {
-  // this works because Eleventy also installs markdown-it
   const markdownIt = require('markdown-it')
 
   // adds unique ids to all headings
