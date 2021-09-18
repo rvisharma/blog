@@ -6,7 +6,7 @@ summary: thoughts and writings of rvi.
 <main class="prose container mx-auto px-4">
   <ul>
     {%- for post in collections.post -%}
-      <li><a href="{{ post.url }}"> {{ post.data.title }}</a></li>
+      <li><a class="font-display" href="{{ post.url }}"> {{ post.data.title }}</a></li>
     {%- endfor -%}
   </ul>
 </main>

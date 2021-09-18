@@ -8,6 +8,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight)
 
   eleventyConfig.addPassthroughCopy({ 'src/meta': '.' })
+  eleventyConfig.addPassthroughCopy({
+    'src/fonts/PlusJakarta_Sans-2.5/webfonts': 'fonts',
+  })
 
   setupMarkdownConfig(eleventyConfig)
 

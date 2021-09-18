@@ -6,6 +6,24 @@ html {
   font-size: 18px;
 }
 
+
+// Bold
+@font-face {
+  font-family: 'PlusJakartaSans';
+  src: url('/fonts/PlusJakartaSans-ExtraBold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+// Semibold
+@font-face {
+  font-family: 'PlusJakartaSans';
+  src: url('/fonts/PlusJakartaSans-Bold.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+}
+
+
 .full-bleed {
   position: relative;
   width: 100vw;
