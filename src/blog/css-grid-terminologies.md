@@ -217,11 +217,11 @@ How do we place grid items on grid areas? We'll cover that in the upcoming post.
 
 ## References mentioned in the post
 
-- 📚 [CSS - The definitive guide](https://meyerweb.com/eric/books/css-tdg/){target="_blank" rel="noopener noreferrer"} — \_Eric A. Meyer & Estelle Weyl_
-- 📹 [Start using CSS Grid Layout](https://www.youtube.com/watch?v=Felq4z_rdPQ){target="_blank" rel="noopener noreferrer"} — \_Rachel Andrew_
-- 🔖 [Introduction to formatting contexts](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Intro_to_formatting_contexts){target="_blank" rel="noopener noreferrer"} — \_MDN_
-- 🔖 [Understanding CSS Layout And The Block Formatting Context](https://www.smashingmagazine.com/2017/12/understanding-css-layout-block-formatting-context/){target="_blank" rel="noopener noreferrer"} — \_Rachel Andrew_
-- 🔖 [Margins in CSS](https://www.smashingmagazine.com/2019/07/margins-in-css/){target="_blank" rel="noopener noreferrer"} — \_Rachel Andrew_
+- 📚 [CSS - The definitive guide](https://meyerweb.com/eric/books/css-tdg/){target="\_blank" rel="noopener noreferrer"} — _Eric A. Meyer & Estelle Weyl_
+- 📹 [Start using CSS Grid Layout](https://www.youtube.com/watch?v=Felq4z_rdPQ){target="\_blank" rel="noopener noreferrer"} — _Rachel Andrew_
+- 🔖 [Introduction to formatting contexts](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Intro_to_formatting_contexts){target="\_blank" rel="noopener noreferrer"} — _MDN_
+- 🔖 [Understanding CSS Layout And The Block Formatting Context](https://www.smashingmagazine.com/2017/12/understanding-css-layout-block-formatting-context/){target="\_blank" rel="noopener noreferrer"} — _Rachel Andrew_
+- 🔖 [Margins in CSS](https://www.smashingmagazine.com/2019/07/margins-in-css/){target="\_blank" rel="noopener noreferrer"} — _Rachel Andrew_
 
 <!-- Codepen embed lib -->
 <script defer src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
