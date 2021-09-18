@@ -1,8 +1,12 @@
 const path = require('path');
 const Image = require("@11ty/eleventy-img");
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
+
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.addPassthroughCopy({"src/meta": "."});
 
