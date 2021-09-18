@@ -16,13 +16,15 @@ $ npm install
 ```
 $ npm run dev
 ```
- And in debug mode:
- 
+
+And in debug mode:
+
 ```
 $ npm run dev:debug
 ```
 
 You can view the website at the given access URL:
+
 ```
 $ light-server is listening at http://localhost:4000
 ```

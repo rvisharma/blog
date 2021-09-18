@@ -8,7 +8,6 @@ summary: In this post, we dive into fundamental units of css grid
 layout: layouts/tailwind-prose-base.njk
 ---
 
-
 # CSS Grid - Introduction and terminologies
 
 {% image
@@ -17,8 +16,7 @@ layout: layouts/tailwind-prose-base.njk
 %}
 {.excalidraw .full-bleed}
 
-
-CSS Grid came into the limelight recently([a few years ago](https://www.youtube.com/watch?v=Felq4z_rdPQ){target="_blank" rel="noopener noreferrer"}) but its presence has been there since old IE days. CSS Grid solves the problem area of two-dimensional layouts.
+CSS Grid came into the limelight recently([a few years ago](https://www.youtube.com/watch?v=Felq4z_rdPQ){target="\_blank" rel="noopener noreferrer"}) but its presence has been there since old IE days. CSS Grid solves the problem area of two-dimensional layouts.
 There have been multiple attempts to solve the designing layout using other properties in CSS - position hacks, floats, table, flex are such very popular examples with comes with their own set of problems.
 
 {% image
@@ -37,8 +35,7 @@ CSS is a declarative language, when you need something to be of let's say red co
 %}
 {.excalidraw .full-bleed}
 
-
-<sub>excuse this poor imitation of xkcd, the original one for regex is a lot better - [https://xkcd.com/208/](https://xkcd.com/208/){target="_blank" rel="noopener noreferrer"}</sub>
+<sub>excuse this poor imitation of xkcd, the original one for regex is a lot better - [https://xkcd.com/208/](https://xkcd.com/208/){target="\_blank" rel="noopener noreferrer"}</sub>
 
 When the grid was not available we used tables and flexbox to create grid like layouts which was not semantically correct and also hard to pull off in some way. Tables and flexbox usages still hold place today for what they were meant to be. In the end, **CSS Grid is just another tool in our toolbox**. And as the saying goes - _use the right tool, for the right job._ It blends well with other layout systems like it is perfectly valid to create a flexbox container inside a CSS grid element.
 
@@ -67,7 +64,7 @@ So, what are grid container? In _simple_ terms, grid container is **an element t
 %}
 {.excalidraw .full-bleed}
 
->What's this grid formatting context?
+> What's this grid formatting context?
 
 ### Formatting context
 
@@ -75,9 +72,9 @@ To answer that, let's understand what is _formatting context_ in general. Format
 
 For example, when you use `display: flex;` it sets the element to be of _flex formatting context_ and then by using flex related properties we can change the layout of its child. There are many such formatting contexts, like when you use a `<p></p>` tag, it creates an _inline formatting context_ which alters the behavior of the box model as compared to the default _block formatting context_.
 
-There are many helpful resources available on internet to understand formatting context. I would recommend an [introductory article](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Intro_to_formatting_contexts){target="_blank" rel="noopener noreferrer"} on MDN and this article by Rachel Andrew on [CSS Layout And The Block Formatting Context](https://www.smashingmagazine.com/2017/12/understanding-css-layout-block-formatting-context/){target="_blank" rel="noopener noreferrer"}
+There are many helpful resources available on internet to understand formatting context. I would recommend an [introductory article](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Intro_to_formatting_contexts){target="\_blank" rel="noopener noreferrer"} on MDN and this article by Rachel Andrew on [CSS Layout And The Block Formatting Context](https://www.smashingmagazine.com/2017/12/understanding-css-layout-block-formatting-context/){target="\_blank" rel="noopener noreferrer"}
 
-Coming back to grid formatting context. How do we create such a thing? By adding the declaration `display: grid;` or  `display: inline-grid;` to an element. With this, we create a new grid formatting context and the element will be known as **grid container**.
+Coming back to grid formatting context. How do we create such a thing? By adding the declaration `display: grid;` or `display: inline-grid;` to an element. With this, we create a new grid formatting context and the element will be known as **grid container**.
 
 ### Block level and Inline level grid container
 
@@ -91,16 +88,16 @@ We can create grid containers in two fashion – block-level and inline-level. B
 </p>
 <!-- DEM0 - Inline vs Block grid - END -->
 
-
 > 📌 If an inline-grid container has `position: absolute;` or `float` in its properties, then `inline` gets dropped and it becomes a regular block grid container.
 
 ### Block grid and Block containers
 
 Block grids look like they behave similar to the regular block containers which are created by elements such as - div, main, section, etc... But there are few differences between block-level grid and block containers:
+
 - Interaction with floated elements
 - Margin collapsing
 
-**Interaction with floated elements** — When a parent element contains a floated element, the child  `div` (or any other block element) goes under the floated element. But in the case of the grid container, **it does not**. Check out the pen below.
+**Interaction with floated elements** — When a parent element contains a floated element, the child `div` (or any other block element) goes under the floated element. But in the case of the grid container, **it does not**. Check out the pen below.
 
 <!-- DEM0 - Float on Block and Grid container - START -->
 <p class="codepen" data-height="812" data-theme-id="light" data-default-tab="result" data-user="rvisharma" data-slug-hash="yLaqQgy" style="height: 812px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="grid-container-vs-block-container">
@@ -110,8 +107,7 @@ Block grids look like they behave similar to the regular block containers which 
 </p>
 <!-- DEM0 - Float on Block and Grid container - END -->
 
-**Margin collapsing** — Grid containers **do not** collapse vertical margin, whereas block elements do. Margin collapsing is itself an interesting topic. To know more about margin and margin-collapse and how it affects layout, check out this super awesome post _again_ by Rachel Andrew - [Margins in CSS](https://www.smashingmagazine.com/2019/07/margins-in-css/){target="_blank" rel="noopener noreferrer"}
-
+**Margin collapsing** — Grid containers **do not** collapse vertical margin, whereas block elements do. Margin collapsing is itself an interesting topic. To know more about margin and margin-collapse and how it affects layout, check out this super awesome post _again_ by Rachel Andrew - [Margins in CSS](https://www.smashingmagazine.com/2019/07/margins-in-css/){target="\_blank" rel="noopener noreferrer"}
 
 ## Grid item
 
@@ -130,7 +126,6 @@ There is no such restriction on defining the layout of grid items. A grid item c
 "we can use flexbox and grid together"
 %}
 {.excalidraw .full-bleed}
-
 
 ## Grid lines
 
@@ -152,7 +147,6 @@ We can refer to the grid lines as numbers via CSS and place the grid items. They
 %}
 {.excalidraw .full-bleed}
 
-
 The area between 2 adjacent grid lines is known as a grid track. The direction of the grid tracks can be vertical and horizontal. The vertical direction is the columns and the horizontal direction is rows. (this changes based on the writing mode)
 
 ## Grid cell
@@ -164,7 +158,6 @@ The area between 2 adjacent grid lines is known as a grid track. The direction o
 {.excalidraw .full-bleed}
 
 The area between 4 grid lines is called a grid cell, it is the smallest unit of area in a grid.
-
 
 ## Grid area
 
@@ -187,8 +180,9 @@ If we don't define any grid area, a default grid area will be created from start
 In an explicit grid, we define the track size and the number of rows/columns using `grid-template-columns` and `grid-template-rows`
 
 Here is how we define 3 columns and 2 rows with their corresponding track sizes.
+
 ```css
-.grid-container{
+.grid-container {
   display: grid;
 
   /* 3 columns */
@@ -198,7 +192,9 @@ Here is how we define 3 columns and 2 rows with their corresponding track sizes.
   grid-template-rows: 300px 300px;
 }
 ```
+
 Few things to note:
+
 - The track size values can be fixed widths (px, em, rem, %, ch, ...) or flexible widths (fractional spaces, content-based space)
 - There is no limitation on defining the number of rows and columns.
 
@@ -216,17 +212,15 @@ How do we place grid items on grid areas? We'll cover that in the upcoming post.
 %}
 {.excalidraw .excalidraw--invert .full-bleed}
 
-
-🎨 All drawings were made using [Excalidraw](https://excalidraw.com/#json=5806952810545152,KdPJk6L2kcXKiisdRSFSiA){target="_blank" rel="noopener noreferrer"}
+🎨 All drawings were made using [Excalidraw](https://excalidraw.com/#json=5806952810545152,KdPJk6L2kcXKiisdRSFSiA){target="\_blank" rel="noopener noreferrer"}
 
 ## References mentioned in the post
 
-- 📚 [CSS - The definitive guide](https://meyerweb.com/eric/books/css-tdg/){target="_blank" rel="noopener noreferrer"} — _Eric A. Meyer & Estelle Weyl_
-- 📹 [Start using CSS Grid Layout](https://www.youtube.com/watch?v=Felq4z_rdPQ){target="_blank" rel="noopener noreferrer"} — _Rachel Andrew_
-- 🔖 [Introduction to formatting contexts](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Intro_to_formatting_contexts){target="_blank" rel="noopener noreferrer"} — _MDN_
-- 🔖 [Understanding CSS Layout And The Block Formatting Context](https://www.smashingmagazine.com/2017/12/understanding-css-layout-block-formatting-context/){target="_blank" rel="noopener noreferrer"} — _Rachel Andrew_
-- 🔖 [Margins in CSS](https://www.smashingmagazine.com/2019/07/margins-in-css/){target="_blank" rel="noopener noreferrer"} — _Rachel Andrew_
-
+- 📚 [CSS - The definitive guide](https://meyerweb.com/eric/books/css-tdg/){target="_blank" rel="noopener noreferrer"} — \_Eric A. Meyer & Estelle Weyl_
+- 📹 [Start using CSS Grid Layout](https://www.youtube.com/watch?v=Felq4z_rdPQ){target="_blank" rel="noopener noreferrer"} — \_Rachel Andrew_
+- 🔖 [Introduction to formatting contexts](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Intro_to_formatting_contexts){target="_blank" rel="noopener noreferrer"} — \_MDN_
+- 🔖 [Understanding CSS Layout And The Block Formatting Context](https://www.smashingmagazine.com/2017/12/understanding-css-layout-block-formatting-context/){target="_blank" rel="noopener noreferrer"} — \_Rachel Andrew_
+- 🔖 [Margins in CSS](https://www.smashingmagazine.com/2019/07/margins-in-css/){target="_blank" rel="noopener noreferrer"} — \_Rachel Andrew_
 
 <!-- Codepen embed lib -->
 <script defer src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
