@@ -1,5 +1,5 @@
 ---
-title: CSS Grid Introduction and Terminologies
+title: CSS Grid – Introduction and Terminologies
 tags:
   - css
   - css-grid
@@ -8,7 +8,7 @@ summary: In this post, we dive into fundamental units of css grid
 layout: layouts/tailwind-prose-base.njk
 ---
 
-# CSS Grid - Introduction and terminologies
+# {{title}}
 
 {% image
 "src/images/css-grid-terminologies/css-grid.png",
