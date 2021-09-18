@@ -18,7 +18,25 @@ module.exports = {
             },
             'h1,h2,h3,h4,h5,h6': {
               fontFamily: theme('fontFamily.display'),
+
+              /**
+               * give some space on top
+               */
               scrollMarginTop: '2em',
+
+              /**
+               * make the heading position relative for
+               * absolute positioned link pseudo element
+               */
+              position: 'relative',
+
+              /**
+               * markdown it link plugin creates a anchor tag
+               * with this class
+               */
+              '.header-anchor': {
+                textDecoration: 'none',
+              },
             },
             'h1,h2': {
               fontWeight: theme('fontWeight.bold'),

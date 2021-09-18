@@ -59,7 +59,9 @@ function setupMarkdownConfig(eleventyConfig) {
 
   let options = { html: true, breaks: true, linkify: true }
   const markdownLib = markdownIt(options)
-    .use(markdownItAnchor)
+    .use(markdownItAnchor, {
+      permalink: markdownItAnchor.permalink.headerLink(),
+    })
     .use(markdownItAttrs)
 
   // replace the default markdown-it instance
