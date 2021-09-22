@@ -38,6 +38,13 @@ module.exports = {
                 textDecoration: 'none',
               },
             },
+            h1: {
+              /**
+               * crisp title heading
+               */
+              letterSpacing: theme('letterSpacing.tighter'),
+              lineHeight: theme('lineHeight.9'),
+            },
             'h1,h2': {
               fontWeight: theme('fontWeight.bold'),
             },
