@@ -1,17 +1,26 @@
 const path = require('path')
 const Image = require('@11ty/eleventy-img')
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
+const UpgradeHelper = require('@11ty/eleventy-upgrade-help')
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(UpgradeHelper)
+
+  // image optimization
   eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode)
 
+  // syntax highlighting using prism
   eleventyConfig.addPlugin(syntaxHighlight)
 
+  // copy all files from meta folder to the root of output dir
   eleventyConfig.addPassthroughCopy({ 'src/meta': '.' })
+
+  // copy all fonts from webfonts dir to fonts dir
   eleventyConfig.addPassthroughCopy({
     'src/fonts/PlusJakarta_Sans-2.5/webfonts': 'fonts',
   })
 
+  // setup markdown plugins
   setupMarkdownConfig(eleventyConfig)
 
   return {

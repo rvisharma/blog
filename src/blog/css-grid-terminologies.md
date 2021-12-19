@@ -6,6 +6,7 @@ tags:
   - post
 summary: In this post, we dive into fundamental units of css grid
 layout: layouts/tailwind-prose-base.njk
+counterKey: css-grid-terminologies
 ---
 
 # {{title}}

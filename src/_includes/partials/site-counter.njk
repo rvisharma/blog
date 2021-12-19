@@ -1,0 +1,12 @@
+<span title="visitor count" id="visitCount" class="cursor-wait text-xs fixed right-2 top-1 animate-ping border border-gray-400 rounded px-2">♾</span>
+
+<script>
+  function siteCounterCb({value}) {
+    const el = document.getElementById('visitCount');
+    el.classList.remove('animate-ping');
+    el.classList.add('font-mono');
+    el.innerText = value ?? 0;
+  }
+</script>
+
+<script async src="https://api.countapi.xyz/hit/rvi.fyi/{{counterKey}}?callback=siteCounterCb"></script>
